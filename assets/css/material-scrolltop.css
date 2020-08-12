@@ -1,0 +1,53 @@
+.material-scrolltop {
+  display: block;
+  position:fixed;
+  width: 0;
+  height: 0;
+  bottom:50px;
+  right:15px;
+  padding:0;
+  overflow: hidden;
+  outline: none;
+  border: none; 
+  box-shadow:0px 0px 15px 2px #000;
+  z-index:9999;
+  cursor: hand;
+  border-radius:23px 23px 12px 16px;
+  background:blue;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+  -o-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1); }
+  .material-scrolltop:hover {
+    box-shadow:0px 0px 10px 3px #fff;
+  }
+  .material-scrolltop::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 0;
+    border-radius: 100%;
+    background: #222; }
+  .material-scrolltop:active::before {
+    width: 120%;
+    padding-top: 120%;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .material-scrolltop.reveal {
+    width: 50px;
+    height: 40px; }
+  .material-scrolltop span {
+    display: block;
+    font-size: 25px;
+    color: #fff; }

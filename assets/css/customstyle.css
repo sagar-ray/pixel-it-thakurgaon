@@ -1,0 +1,76 @@
+*{margin: 0px;padding:0px;}
+@font-face{font-family:pro;src:url(../fonts/pro.ttf);}
+@font-face{font-family:prime;src:url(../fonts/prime.ttf);}
+.pro{font-family:pro;}
+.prime{font-family:prime;}
+button:focus{outline:none;}
+a:hover{text-decoration:none;}
+#self-container{min-width:98% !important;margin: 0px auto;}
+
+.py-6{padding:70px 0px;}
+.transparent{
+    background:transparent;
+    color:transparent;
+}
+.z-index0{z-index:-1;}
+
+.title-border-wrap{
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(to right, rgb(255, 115, 0), #333, green);
+    font-size:50px;
+    font-family:pro;
+    border-radius:40px;    
+    padding:0px;
+    padding-bottom:3px;
+    margin-bottom:100px;
+}
+.title-blue-wrap{ 
+    background: linear-gradient(to right, #444, #555, #333); 
+}
+.title-border{
+    background:#fff;
+    color:rgb(214, 200, 200);
+    padding:0px 40px;
+    border-radius:40px;
+    margin-bottom:7px;
+    padding-bottom:6px;
+    margin-right:6px;
+    margin-left:6px;
+}
+.title-blue{
+    background:blue;
+    color:#999;
+}
+
+.spin{
+    animation-name:spin;
+    animation-duration:66s;
+    animation-iteration-count:9999;
+    animation-direction:alternate; 
+}
+@keyframes spin{
+    to{ transform:rotate(10000deg)}
+    from{ transform:rotate(0deg) }
+}
+
+.spin-2{
+    animation-name:spin-2;
+    animation-duration:150s;
+    animation-iteration-count:9999;
+    animation-direction:alternate;
+    opacity:0.3;
+}
+@keyframes spin-2{
+    to{  
+        transform:rotate(0deg);
+    }
+    from{  
+        transform:rotate(10000deg);
+    }
+}
+
+.container-full{
+    min-width:99%;
+    margin:0px auto;
+}
